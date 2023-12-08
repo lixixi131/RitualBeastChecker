@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/spritLara"
+        android:layout_width="115dp"
+        android:layout_height="107dp"
+        android:src="@drawable/spiritual_beast_tamer_lara"
+
+
+        app:layout_constraintEnd_toStartOf="@id/winda"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/apelio"
+        />
+
+    <ImageView
+        android:id="@+id/winda"
+        android:layout_width="115dp"
+        android:layout_height="107dp"
+        android:src="@drawable/spiritual_beast_tamer_winda"
+        app:layout_constraintStart_toEndOf="@+id/spritLara"
+        app:layout_constraintEnd_toStartOf="@id/wen"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/apelio"
+
+        />
+
+
+    <ImageView
+        android:id="@+id/wen"
+        android:layout_width="115dp"
+        android:layout_height="107dp"
+        android:src="@drawable/ritual_beast_tamer_wen"
+
+        app:layout_constraintStart_toEndOf="@id/winda"
+        app:layout_constraintEnd_toStartOf="@id/elder"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/apelio"
+
+        />
+
+    <ImageView
+        android:id="@+id/elder"
+        android:layout_width="115dp"
+        android:layout_height="107dp"
+        android:src="@drawable/ritual_beast_tamer_elder"
+
+        app:layout_constraintStart_toEndOf="@id/wen"
+        app:layout_constraintEnd_toStartOf="@id/ritualLara"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/apelio"
+
+        />
+
+    <ImageView
+        android:id="@+id/ritualLara"
+        android:layout_width="115dp"
+        android:layout_height="107dp"
+        android:src="@drawable/ritual_beast_tamer_lara"
+        app:layout_constraintBottom_toTopOf="@id/apelio"
+        app:layout_constraintEnd_toStartOf="@id/drago"
+        app:layout_constraintStart_toEndOf="@+id/elder"
+        app:layout_constraintTop_toTopOf="parent"
+
+        />
+
+    <ImageView
+        android:id="@+id/drago"
+        android:layout_width="115dp"
+        android:layout_height="107dp"
+        android:src="@drawable/ritual_beast_ultinochiudrago"
+        app:layout_constraintStart_toEndOf="@+id/ritualLara"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/apelio"
+        />
+
+
+    <ImageView
+        android:id="@+id/apelio"
+        android:layout_width="119dp"
+        android:layout_height="107dp"
+        android:src="@drawable/spiritual_beast_apelio"
+        app:layout_constraintEnd_toStartOf="@id/rampengu"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/spritLara"
+        app:layout_constraintBottom_toTopOf="@id/initButton"
+        />
+
+    <ImageView
+        android:id="@+id/rampengu"
+        android:layout_width="119dp"
+        android:layout_height="107dp"
+        android:src="@drawable/spiritual_beast_rampengu"
+        app:layout_constraintTop_toBottomOf="@id/ritualLara"
+        app:layout_constraintStart_toEndOf="@id/apelio"
+
+        app:layout_constraintEnd_toStartOf="@id/pettlephin"
+        app:layout_constraintBottom_toTopOf="@id/initButton"
+        />
+
+    <ImageView
+        android:id="@+id/pettlephin"
+        android:layout_width="119dp"
+        android:layout_height="107dp"
+        android:src="@drawable/spiritual_beast_pettlephin"
+        app:layout_constraintStart_toEndOf="@id/rampengu"
+        app:layout_constraintTop_toBottomOf="@id/ritualLara"
+        app:layout_constraintEnd_toStartOf="@id/cannahawk"
+        app:layout_constraintBottom_toTopOf="@id/initButton"
+        />
+
+
+    <ImageView
+        android:id="@+id/cannahawk"
+        android:layout_width="119dp"
+        android:layout_height="107dp"
+        android:src="@drawable/spiritual_beast_cannahawk"
+        app:layout_constraintStart_toEndOf="@id/pettlephin"
+        app:layout_constraintTop_toBottomOf="@id/ritualLara"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/initButton"
+        />
+
+    <Button
+        android:id="@+id/initButton"
+        android:layout_width="115dp"
+        android:layout_height="62dp"
+        android:color = "#2B2BA1"
+        android:textColor="#FFFFFF"
+        android:text="활성화"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rampengu"
+
+
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>
